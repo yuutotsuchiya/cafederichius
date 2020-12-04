@@ -1,0 +1,773 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin:0;
+}
+header{
+    background-color: #520916;
+    position: relative;
+    border-bottom: solid 7px #be9857;
+}
+.header-title img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 10px;
+    z-index:1;
+}
+.header-column-section{
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1500px;
+    margin:0 auto;
+}
+.header-column{
+    width: 40%;
+    display: flex;
+    justify-content:space-around;
+}
+.header-list a{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom: solid 5px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.header-list a:hover{
+    color: #dbcba8;
+}
+main{
+    border-top:solid 3px #fff;
+}
+body{
+    background-color:rgb(32, 11, 0);
+}
+.slider-img img{
+    width:100%;
+    height:auto;
+}
+.article{
+    background-color:rgb(32, 11, 0);
+    border-top:solid 3px #fff;
+    height:200px;
+}
+.features{
+    background-color: #151715;
+    position: relative;
+}
+.features-background{
+    background-image: url("../image/rogobig.png");
+    background-size:120% auto;
+}
+.features-title{
+    position: relative;
+    width: 335px;
+    color: #dbcba8;
+    margin:0 auto;
+    margin-bottom: 50px;
+    padding-top:70px;
+    padding-bottom: 8px;
+    font-size: 70px;
+    text-align: center;
+    line-height: 60%;
+    border-bottom:solid 7px #dbcba8;
+    font-family: 'Noto Serif JP', serif;
+}
+.features-title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    border-bottom:7px solid #961027;
+    border-left:45px solid #961027;
+}
+.features-subtitle{
+    color: #fff;
+    font-size:20px;
+}
+.feature{
+    padding: 30px 50px;
+    display:flex;
+    justify-content:space-around;
+    max-width:1500px;
+    margin:0 auto;
+}
+.feature:nth-child(2){
+    flex-direction:row-reverse;
+}
+.feature-section{
+    display:block;
+    width:540px;
+}
+.feature-title{
+    font-size:50px;
+    color:#dbcba8;
+    padding-bottom:12px;
+    border-bottom:solid 4px #961027;
+    font-family: 'Noto Serif JP', serif;
+}
+.feature-lead{
+    font-size:20px;
+    padding-top:25px;
+    color:#fff;
+    line-height:240%;
+    font-family: 'Noto Serif JP', serif;
+}
+.feature-img img{
+    width:540px;
+}
+.menues{
+    background-color:rgb(32, 11, 0);
+    position: relative;
+}
+.menues-title{
+    position: relative;
+    width: 230px;
+    color: #dbcba8;
+    margin:0 auto;
+    margin-bottom: 50px;
+    padding-top:70px;
+    padding-bottom: 8px;
+    font-size: 70px;
+    text-align: center;
+    line-height: 60%;
+    border-bottom:solid 7px #dbcba8;
+    font-family: 'Noto Serif JP', serif;
+}
+.menues-title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    border-bottom:7px solid #961027;
+    border-left:67px solid #961027;
+}
+.menues-subtitle{
+    color: #fff;
+    font-size:20px;
+}
+.menu-background{
+    margin:0 auto;
+    background-image: url("../image/rogosimple.png");
+    background-size:120% auto;
+    padding: 0 100px;
+}
+.menu{
+    padding-bottom:80px;
+    max-width:1400px;
+    margin:0 auto;
+}
+.menu-title{
+    position:relative;
+    font-size:25px;
+    color:#dbcba8;
+    padding-bottom:20px;
+    padding-left:20px;
+}
+.menu-title::before{
+    content:'';
+    display:block;
+    position:absolute;
+    left:0;
+    top:12px;
+    border-top:solid 12px #dbcba8;
+    border-left:solid 12px #dbcba8;
+}
+.menu-section{
+    display:flex;
+    justify-content:space-between;
+}
+.menu-details-img img{
+    width:350px;
+    height:235px;
+}
+.menu-details{
+    display:flex;
+    flex-direction:column-reverse;
+}
+.menu-details-section{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:solid 1px #fff;
+    padding:12px 0;
+}
+.menu-details-title{
+    color:#fff;
+    font-size:17px;
+    font-weight:300;
+}
+.menu-details-lead{
+    color:#fff;
+    font-size:17px;
+    font-weight:300;
+}
+.guides{
+    max-width:1200px;
+    margin:0 auto;
+    padding-bottom:60px;
+}
+.guides-title{
+    width:300px;
+    font-size:25px;
+    text-align:center;
+    color:#fff;
+    padding:10px;
+    margin:0 auto 40px;
+    border:2px solid #fff;
+    border-radius:15px 15px/15px 15px;
+}
+.guide-section{
+    display:flex;
+    justify-content:space-around;
+    padding: 0 50px;
+}
+.guide{
+    width:350px;
+    height:250px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.guide:nth-child(1){
+    background-image: url("../image/menumore1.jpg");
+    background-size:350px 250px;
+}
+.guide:nth-child(2){
+    background-image: url("../image/menumore2.jpg");
+    background-size:350px 250px;
+}
+.guide-title{
+    color:#fff;
+    font-size:30px;
+    padding-top:100px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.guide-lead{
+    color:#fff;
+    font-size:18px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.acsesses{
+    background-color: #151715;
+    border-bottom:solid 3px #fff;
+}
+.acsesses-title{
+    position: relative;
+    width: 265px;
+    color: #dbcba8;
+    margin:0 auto;
+    margin-bottom: 50px;
+    padding-top:70px;
+    padding-bottom: 8px;
+    font-size: 70px;
+    text-align: center;
+    line-height: 60%;
+    border-bottom:solid 7px #dbcba8;
+    font-family: 'Noto Serif JP', serif;
+}
+.acsesses-title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    border-bottom:7px solid #961027;
+    border-left:58px solid #961027;
+}
+.acsesses-subtitle{
+    color: #fff;
+    font-size:20px;
+}
+.acsesses-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 52px;
+}
+.acsess-section{
+    display: block;
+    padding-left: 100px;
+}
+.acsess{
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    box-sizing: border-box;
+    width: 400px;
+    margin-bottom:21px;
+}
+.acsess-title{
+    width: 140px;
+    height: 25px;
+    color:#dbcba8;
+    font-size:18px;
+    padding-bottom:5px;
+    border-bottom:solid 2px #961027;
+}
+.acsess-lead{
+    width: 190px;
+    height: 30px;
+    color:#fff;
+}
+.acsess-img img{
+    width: 400px;
+    height: auto;
+}
+
+.footer{
+    background-color: #520916;
+    position: relative;
+    border-top:solid 7px #be9857;
+    position: relative;
+}
+.footer-title img{
+    width:120px;
+    position: absolute;
+    top:-60px;
+    left: 70px;
+}
+.footer-column{
+    display: flex;
+    justify-content:space-around;
+    padding:40px 0px 40px 230px;
+    list-style:none;
+}
+.footer-column-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border-bottom: solid 5px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.footer-column-list a:hover{
+    color: #dbcba8;
+}
+.footer-copy{
+    padding: 8px 0px;
+    font-size: 15px;
+    background-color: #111;
+    border-top:solid 3px #fff;
+    color:#fff;
+    text-align: center;
+}
+@media screen and (max-width:1280px) {
+.feature{
+    justify-content:space-around;
+}
+.feature:nth-child(2){
+    flex-direction:row-reverse;
+}
+.feature-section{
+    display:block;
+    width:400px;
+}
+.feature-title{
+    font-size:30px;
+    
+}
+.feature-lead{
+    font-size:12px;
+    
+}
+.feature-img img{
+    width:400px;
+}
+.menu-title{
+    position:relative;
+    font-size:25px;
+    color:#dbcba8;
+    padding-bottom:20px;
+    padding-left:20px;
+}
+.menu-title::before{
+    content:'';
+    display:block;
+    position:absolute;
+    left:0;
+    top:12px;
+    border-top:solid 12px #dbcba8;
+    border-left:solid 12px #dbcba8;
+}
+.menu-details-img img{
+    width:250px;
+    height:166px;
+}
+.menu-details{
+    display:flex;
+    flex-direction:column-reverse;
+}
+.guide-section{
+    justify-content:space-between;
+}
+}
+@media screen and (max-width:980px) {
+    .features-background{
+    background-image: url("../image/rogobig.png");
+    background-size:400% auto;
+    }   
+    .feature{
+    display:block;
+    }
+    .feature-section{
+    display:block;
+    width:400px;
+    margin:0 auto;
+    padding-bottom:30px;
+    }
+    .feature-title{
+    font-size:30px;
+    text-align:center;
+        }
+    .feature-lead{
+    font-size:12px;
+    text-align:center;
+    }
+    .feature-img img{
+    width:100%;
+    }
+    .menu-background{
+    margin:0 auto;
+    background-image: url("../image/rogosimple.png");
+    background-size:200% auto;
+    padding: 0 100px;
+    }
+    .menu{
+        padding-bottom:30px;
+    }
+    .menu-background{
+        padding: 0 30px;
+    }
+    .menu-section{
+        display:block;
+    }
+    .menu-details-img{
+        margin:0 auto;
+    }
+    .menu-details-img img{
+        width:500px;
+        height:333px;
+        margin-bottom:20px;
+    }
+    .menu-details-section{
+    width:500px;
+    margin:0 auto 40px;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:solid 1px #fff;
+    padding:12px 0;
+    }
+    .menu-details-title{
+    color:#fff;
+    font-size:17px;
+    font-weight:300;
+    }
+    .menu-details-lead{
+    color:#fff;
+    font-size:17px;
+    font-weight:300;
+    }
+    .guide-section{
+    display:block;
+    justify-content:space-between;
+    padding: 0 30px;
+    }
+    .guide{
+    width:350px;
+    height:250px;
+    margin: 0 auto 30px;
+    }
+    .guide:nth-child(1){
+    background-image: url("../image/menumore1.jpg");
+    background-size:350px 250px;
+    }
+    .guide:nth-child(2){
+    background-image: url("../image/menumore2.jpg");
+    background-size:350px 250px;
+    }
+    .guide-title{
+    color:#fff;
+    font-size:30px;
+    padding-top:100px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .guide-lead{
+    color:#fff;
+    font-size:18px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .header-title img{
+    width: 90px;
+    left: calc(50% - 45px);
+    top: calc(50% - 45px);
+    }
+    .header-column-section{
+    height: 120px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1500px;
+    margin:0 auto;
+    }
+    .header-list a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: solid 2px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .header-list a:hover{
+    color: #dbcba8;
+    }
+    .acsesses-section{
+    display: block;
+    padding-bottom: 0px;
+    }
+    .acsess-section{
+    display: block;
+    padding-left: 0px;
+    padding-top:30px;
+    padding-bottom:30px;
+    }
+    .acsess{
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+    }
+    .acsess-img{
+    width: 400px;
+    height: auto;
+    margin:0 auto ;
+    }
+    .footer-title img{
+    width:80px;
+    position: absolute;
+    top:13px;
+    left: 20px;
+    }
+    .footer-column{
+    display: flex;
+    justify-content:space-around;
+    padding:40px 0px 40px 100px;
+    list-style:none;
+    }
+    .footer-column-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: solid 2px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+}
+@media screen and (max-width:580px) {
+    .header-title img{
+    width: 50px;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    }
+    .header-column-section{
+    height: 70px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto;
+    }
+    .header-list a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    border-bottom: solid 2px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .header-list a:hover{
+    color: #dbcba8;
+    }
+    .acsesses-title{
+    width: 185px;
+    font-size: 50px;
+    border-bottom:solid 4px #dbcba8;
+    }
+    .acsesses-title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-bottom:4px solid #961027;
+    border-left:35px solid #961027;
+    }
+    .acsesses-subtitle{
+    font-size:15px;
+    }
+    .acsess{
+    height: 37px;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    width: 290px;
+    padding-left:18px;
+    }
+    .acsess-section {
+    display: block;
+    padding:30px 30px;
+    }
+    .acsess-title{
+    width: 120px;
+    height: 25px;
+    color:#dbcba8;
+    font-size:18px;
+    }
+    .acsess-lead{
+    display:inline-block;
+    padding-left:20px;
+    font-size:10px;
+    width: 120px;
+    height:20px;
+    }
+    .acsess-img{
+    width: 250px;
+    }
+    .acsess-img img{
+    width: 250px;
+    }
+    .footer-title img{
+    width:80px;
+    position: absolute;
+    top:15px;
+    left:calc(50% - 40px);
+    }
+    .footer-column{
+    display: flex;
+    justify-content:space-around;
+    padding:110px 0px 40px 0px;
+    list-style:none;
+    }
+    .footer-column-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: solid 2px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .features-title{
+    width: 240px;
+    font-size: 50px;
+    border-bottom:solid 4px #dbcba8;
+    }
+    .features-title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-bottom:4px solid #961027;
+    border-left:35px solid #961027;
+    }
+    .features-subtitle{
+    font-size:15px;
+    }
+    .features-background{
+    background-image: url("../image/rogobig.png");
+    background-size:450% auto;
+    }   
+    .feature-section{
+    display:block;
+    width:90%;
+    margin:0 auto;
+    padding-bottom:30px;
+    }
+    .feature-title{
+    font-size:30px;
+    text-align:center;
+    }
+    .feature-lead{
+    font-size:10px;
+    text-align:center;
+    }
+    .feature-img{
+        margin: 0 auto;
+        width:90%;
+    }
+    .feature-img img{
+    width:100%;
+    }
+    .menu-background{
+    margin:0 auto;
+    background-image: url("../image/rogosimple.png");
+    background-size:250% auto;
+    padding: 0 100px;
+    }
+    .menues-title{
+    width: 160px;
+    font-size: 50px;
+    border-bottom:solid 4px #dbcba8;
+    font-family: 'Noto Serif JP', serif;
+    }
+    .menues-title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-bottom:4px solid #961027;
+    border-left:50px solid #961027;
+    }
+    .menues-subtitle{
+    font-size:15px;
+    }
+    .menu-background{
+        padding: 0 20px;
+    }
+    .menu-section{
+        display:block;
+    }
+    .menu-details-img{
+        margin:0 auto;
+    }
+    .menu-details-img img{
+        width:250px;
+        height:166px;
+    }
+    .menu-details-section{
+    width:250px;
+    }
+    .menu-details-title{
+    color:#fff;
+    font-size:17px;
+    font-weight:300;
+    }
+    .menu-details-lead{
+    color:#fff;
+    font-size:17px;
+    font-weight:300;
+    }
+    .guide{
+    width:250px;
+    height:200px;
+    margin: 0 auto 30px;
+    }
+    .guide:nth-child(1){
+    background-image: url("../image/menumore1.jpg");
+    background-size:250px 200px;
+    }
+    .guide:nth-child(2){
+    background-image: url("../image/menumore2.jpg");
+    background-size:250px 200px;
+    }
+    .guide-title{
+    padding-top:60px;
+    }
+    .guides-title{
+    width:250px;
+    font-size:20px;
+    }
+    
+}

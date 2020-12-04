@@ -1,0 +1,415 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: #520916;
+    position: relative;
+    border-bottom: solid 7px #be9857;
+}
+.header-title img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 10px;
+}
+.header-column-section{
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header-column{
+    width: 40%;
+    display: flex;
+    justify-content:space-around;
+}
+.header-list a{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom: solid 5px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.header-list a:hover{
+    color: #dbcba8;
+}
+.campagins{
+    border-top:solid 3px #fff;
+    background-color: rgb(32, 11, 0);
+    padding: 120px 0px 0px 0px;
+}
+.campagins-title{
+    padding:0;
+    position: relative;
+}
+.campagins-title img{
+    width: 100%;
+    height: auto;
+}
+.campagin{
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    justify-content: center;
+}
+.campagin:nth-child(odd){
+    background-color:  rgb(32, 11, 0);
+    flex-direction:row-reverse;
+}
+.campagin:nth-child(even){
+    background-color: #151715;
+}
+.campagin-section{
+    width:65%;
+    max-width:1000px;
+}
+.odd{
+    padding-left:70px;
+}
+.even{
+   padding-right:70px; 
+}
+.campagin-img img{
+    width: 185px;
+    box-shadow: 15px 15px 0px #3c0711;
+}
+.campagin-title{
+    font-size: 30px;
+    color:#fff;
+    border-bottom: solid 3px #961027;
+    position: relative;
+    padding: 5px 0px 30px 170px;
+}
+.campagin-title-beige{
+    color: #fccd95
+}
+.campagin-title-num img{
+    height: 85px;
+    position: absolute;
+    top: 10px;
+    left:0
+}
+.campagin-lead{
+    padding-top: 40px;
+    color:#fff;
+    font-size: 16px;
+    line-height: 280%
+}
+.acsesses{
+    background-color: #151715;
+    border-bottom:solid 3px #fff;
+}
+.acsesses-title{
+    position: relative;
+    width: 265px;
+    color: #dbcba8;
+    margin:0 auto;
+    margin-bottom: 50px;
+    padding-top:70px;
+    padding-bottom: 8px;
+    font-size: 70px;
+    text-align: center;
+    line-height: 60%;
+    border-bottom:solid 7px #dbcba8;
+    font-family: 'Noto Serif JP', serif;
+}
+.acsesses-title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    border-bottom:7px solid #961027;
+    border-left:58px solid #961027;
+}
+.acsesses-subtitle{
+    color: #fff;
+    font-size:20px;
+}
+.acsesses-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 52px;
+}
+.acsess-section{
+    display: block;
+    padding-left: 100px;
+}
+.acsess{
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    box-sizing: border-box;
+    width: 400px;
+    margin-bottom:21px;
+}
+.acsess-title{
+    width: 140px;
+    height: 25px;
+    color:#dbcba8;
+    font-size:18px;
+    padding-bottom:5px;
+    border-bottom:solid 2px #961027;
+}
+.acsess-lead{
+    width: 190px;
+    height: 30px;
+    color:#fff;
+}
+.acsess-img img{
+    width: 400px;
+    height: auto;
+}
+.footer{
+    background-color: #520916;
+    position: relative;
+    border-top:solid 7px #be9857;
+    position: relative;
+}
+.footer-title img{
+    width:120px;
+    position: absolute;
+    top:-60px;
+    left: 70px;
+}
+.footer-column{
+    display: flex;
+    justify-content:space-around;
+    padding:40px 0px 40px 230px;
+    list-style:none;
+}
+.footer-column-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border-bottom: solid 5px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.footer-column-list a:hover{
+    color: #dbcba8;
+}
+.footer-copy{
+    padding: 8px 0px;
+    font-size: 15px;
+    background-color: #111;
+    border-top:solid 3px #fff;
+    color:#fff;
+    text-align: center;
+}
+@media screen and (max-width:980px) {
+    .header-title img{
+    width: 90px;
+    left: calc(50% - 45px);
+    top: calc(50% - 45px);
+    }
+    .header-column-section{
+    height: 120px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1500px;
+    margin:0 auto;
+    }
+    .header-list a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: solid 2px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .header-list a:hover{
+    color: #dbcba8;
+    }
+    .acsesses-section{
+    display: block;
+    padding-bottom: 0px;
+    }
+    .acsess-section{
+    display: block;
+    padding-left: 0px;
+    padding-top:30px;
+    padding-bottom:30px;
+    }
+    .acsess{
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+    }
+    .acsess-img{
+    width: 400px;
+    height: auto;
+    margin:0 auto ;
+    }
+    .footer-title img{
+    width:80px;
+    position: absolute;
+    top:13px;
+    left: 20px;
+    }
+    .footer-column{
+    display: flex;
+    justify-content:space-around;
+    padding:40px 0px 40px 100px;
+    list-style:none;
+    }
+    .footer-column-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: solid 2px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .campagins {
+    border-top: solid 3px #fff;
+    background-color: rgb(32, 11, 0);
+    padding: 0px 0px 0px 0px;
+    }
+    .campagin-section{
+    width:100%;
+    }
+    .campagin-img img{
+    display:none;
+    }
+    .odd{
+    padding-left:0px;
+    }
+    .even{
+   padding-right:0px; 
+    }
+    .campagin-title {
+    font-size: 30px;
+    text-align:center;
+    padding: 100px 0px 30px 0px;
+    }  
+    .campagin-title-num img{
+    height: 80px;
+    top: 0px;
+    left:calc(50% - 75px);
+    } 
+    .campagin-lead {
+    padding-top: 40px;
+    font-size: 14px;
+    line-height: 280%;
+    text-align:center;
+    }
+}
+@media screen and (max-width:630px) {
+    .header-title img{
+    width: 50px;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    }
+    .header-column-section{
+    height: 70px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto;
+    }
+    .header-list a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    border-bottom: solid 2px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .header-list a:hover{
+    color: #dbcba8;
+    }
+    .acsesses-title{
+    width: 185px;
+    font-size: 50px;
+    border-bottom:solid 4px #dbcba8;
+    }
+    .acsesses-title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-bottom:4px solid #961027;
+    border-left:35px solid #961027;
+    }
+    .acsesses-subtitle{
+    font-size:15px;
+    }
+    .acsess{
+    height: 37px;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    width: 290px;
+    padding-left:18px;
+    }
+    .acsess-section {
+    display: block;
+    padding:30px 30px;
+    }
+    .acsess-title{
+    width: 120px;
+    height: 25px;
+    color:#dbcba8;
+    font-size:18px;
+    }
+    .acsess-lead{
+    display:inline-block;
+    padding-left:20px;
+    font-size:10px;
+    width: 120px;
+    height:20px;
+    }
+    .acsess-img{
+    width: 250px;
+    }
+    .acsess-img img{
+    width: 250px;
+    }
+    .footer-title img{
+    width:80px;
+    position: absolute;
+    top:15px;
+    left:calc(50% - 40px);
+    }
+    .footer-column{
+    display: flex;
+    justify-content:space-around;
+    padding:110px 0px 40px 0px;
+    list-style:none;
+    }
+    .footer-column-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: solid 2px #fccd95;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .campagins {
+    border-top: solid 3px #fff;
+    background-color: rgb(32, 11, 0);
+    padding: 0px 0px 0px 0px;
+    }
+    .campagin-title {
+    font-size: 15px;
+    text-align:center;
+    padding: 70px 0px 15px 0px;
+    }  
+    .campagin-title-num img{
+    height: auto;
+    width:80px;
+    top: 0px;
+    left:calc(50% - 40px);
+    } 
+    .campagin-lead {
+    padding-top: 10px;
+    font-size: 10px;
+    line-height: 190%;
+    text-align:center;
+    }
+}
